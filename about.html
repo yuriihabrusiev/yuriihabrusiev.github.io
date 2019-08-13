@@ -1,0 +1,18 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+
+{% for file in site.static_files %}
+  {% if file.image %}
+    <img src="{{file.path}}" alt="{{file.name}}">
+  {% endif %}
+{% endfor %}
+<br/>
+<br/>
+<br/>
+Hi, I'm Yurri. Web developer, consultant and enterpreneur.
+
+
