@@ -1,0 +1,19 @@
+---
+const navLinks: { href: string; label: string }[] = [
+  { href: "/about", label: "About Me" },
+  { href: "/articles", label: "Writings" },
+  { href: "/uses", label: "Uses" },
+]
+---
+
+<nav class="flex p-4">
+  <div class="flex flex-row gap-3">
+    {
+      navLinks.map((link) => (
+        <a href={link.href} class="">
+          {link.label}
+        </a>
+      ))
+    }
+  </div>
+</nav>
