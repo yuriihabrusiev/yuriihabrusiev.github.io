@@ -1,0 +1,14 @@
+---
+import type { CollectionEntry } from "astro:content"
+interface Props {
+  article: CollectionEntry<"articles">
+}
+
+const { data, slug } = Astro.props.article
+---
+
+<article class="rounded p-2 hover:bg-slate-600">
+  <h2>{data.title}</h2>
+  <p>{data.description}</p>
+  <a href=`/articles/${slug}`>Read more</a>
+</article>
