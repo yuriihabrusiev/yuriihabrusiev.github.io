@@ -6,7 +6,10 @@ const navLinks: { href: string; label: string }[] = [
 ]
 ---
 
-<nav class="flex p-4">
+<nav class="flex items-center justify-between p-4">
+  <a href="/" class="font-hubot-sans mr-4 text-2xl font-bold">
+    Yurii Habrusiev
+  </a>
   <div class="flex flex-row gap-3">
     {
       navLinks.map((link) => (

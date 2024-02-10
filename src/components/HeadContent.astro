@@ -1,0 +1,32 @@
+---
+export interface Props {
+  title?: string
+  description?: string
+}
+
+const {
+  title = "Yurii Habrusiev",
+  description = "Personal website of Yurii Habrusiev",
+} = Astro.props
+---
+
+<title>{title}</title>
+<meta name="description" content="{description}" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link
+  rel="preload"
+  href="/fonts/Mona-Sans.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="/fonts/Hubot-Sans.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>

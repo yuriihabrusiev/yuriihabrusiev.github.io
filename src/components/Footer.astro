@@ -2,15 +2,16 @@
 const currentYear = new Date().getFullYear()
 ---
 
-<footer class="flex justify-between">
-  <div class="flex gap-6">
+<footer class="mx-auto flex max-w-7xl justify-between">
+  <div class="">
     <p>
-      Designed & Developed with <a href="https://astro.build/">Astro</a>
+      Designed & Developed with
+      <a href="https://astro.build/" class="transition hover:text-amber-500">
+        Astro
+      </a>
     </p>
+  </div>
+  <div class="socials">
     <p>&copy; {currentYear} Yurii Habrusiev</p>
   </div>
-  <p class="socials">
-    <a href="https://github.com/yuriihabrusiev">GitHub</a>
-    <a href="https://codepen.io/yuriihabrusiev">CodePen</a>
-  </p>
 </footer>
